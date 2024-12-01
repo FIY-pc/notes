@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>笔记库</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+</head>
+<body>
+<div id="app">Loading...</div>
+
+<script>
+  window.$docsify = {
+    name: '笔记列表',
+    nameLink: "",
+    repo: 'https://github.com/fiy-pc/my-website',
+    coverpage: "./docs/coverpage.md",
+
+    homepage: "./docs/home.md",
+    // sidebar
+    loadSidebar: "./docs/sidebar",
+    subMaxLevel: 2,
+    // search
+    search: "auto",
+    search: [
+      "/",
+      "/guide",
+      "/get-started",
+      "/zh-cn/",
+    ],
+    search: {
+      maxAge: 86400000,
+      paths: [],
+      placeholder: "Type to search",
+      // Localization
+      placeholder: {
+        "/zh-cn/": "搜索",
+        "/": "Type to search",
+      },
+      noData: "No Results!",
+      noData: {
+        "/zh-cn/": "找不到结果",
+        "/": "No Results",
+      },
+      depth: 2,
+      hideOtherSidebarContent: false,
+      namespace: "website-1",
+    },
+    // count words
+    count:{
+      countable:true,
+      fontsize:'0.9em',
+      color:'rgb(90,90,90)',
+      language:'chinese'
+    },
+
+  }
+</script>
+// search
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+</body>
+</html>
